@@ -8,11 +8,11 @@ const background = {
 }
 
 function App() {
-  const FriendData = FriendList.map(friend => <Friend name={friend.name} age={friend.age} petName={friend.pets.name} petBreed={friend.pets.breed}/>)
-  
+  const friendData = FriendList.map(friend => <Friend {...friend}/>)
+
   return (
       <div style={background}>
-          {FriendData}            
+          {friendData}         
       </div>
   )
 }

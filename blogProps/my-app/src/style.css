@@ -1,0 +1,58 @@
+* {
+    margin: 0
+}
+
+.App {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBar {
+    color: white;
+}
+
+.headerWords {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 100px;
+    justify-content: space-around;
+}
+
+.headerBar {
+    background-size: 110%;
+    background-position: -50px -250px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("https://coursework.vschool.io/content/images/size/w2000/2017/12/home-bg.jpg");
+}
+
+.pageTitle{
+    font-size: 20px;
+    margin: 0px 16px 0px 0px;
+    padding: 5px 0px;
+
+}
+
+.navList {
+    list-style: none;
+    display: inline;
+}
+
+li {
+    float: left;
+    padding: 10px 20px;
+    font-size: 12px
+}
+
+.cleanBlog {
+    font-size: 80px;
+    margin: 0px 0px 8px
+}
+
+.description {
+    font-size: 24px;
+    margin: 10px 0px 0px;
+    font-weight: lighter;
+}
+
+.centerStuff {
+    padding: 200px 0px;
+    text-align: center;
+}
