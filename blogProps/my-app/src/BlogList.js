@@ -1,14 +1,17 @@
 import React from "react"
 import BlogPost from "./BlogPost"
-import BlogPostData from "./BlogPostData"
+import blogPostData from "./BlogPostData"
 
 function BlogList() {
-    const blogComponents = BlogPostData.map(post => <BlogPost title={post.title} />)
+    const blogComponents = blogPostData.map(blogPost => <BlogPost {...blogPost} />)
 
     return (
-        <div>
-            {blogComponents}
-        </div>
+        <div className="mainContent">
+            <div className="blogList">
+                {blogComponents}
+            </div>
+            <button className="button">OLDER POSTS</button>
+        </div>    
     )
 }
 

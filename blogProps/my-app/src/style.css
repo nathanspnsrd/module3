@@ -56,3 +56,55 @@ li {
     padding: 200px 0px;
     text-align: center;
 }
+
+.mainContent {
+    border-bottom: 1px solid gray;
+}
+
+.blogList {
+    margin: 0px 20px 0px 350px;
+    padding: 15px 15px;
+}
+
+.postTitle {
+    font-size: 36px;
+    margin: 30px 0px 10px
+}
+
+.postSubtitle {
+    font-size: 28px;
+    margin: 0px 0px 10px;
+    font-weight: lighter;
+}
+
+.postInfo {
+    font-size: 18px;
+    margin: 0px 0px 30px;
+    font-style: italic;
+}
+
+.post {
+    border-bottom: 1px solid gray;
+    width: 65%
+}
+
+.button {
+    margin: 0px 100px 20px 950px;
+    padding: 15px;
+    background-color: teal;
+    color: white;
+}
+
+.footerItems {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin: 0px 0px 40px 0px;
+}
+
+.socialIcon {
+    width: 50px;
+    height: 50px;
+    margin: 80px 15px 0px 0px;
+}
