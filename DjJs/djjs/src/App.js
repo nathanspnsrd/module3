@@ -1,5 +1,4 @@
 import React from 'react'
-import Buttons from "./Buttons"
 import AllSquares from "./AllSquares"
 
 import './App.css';
@@ -12,7 +11,6 @@ class App extends React.Component {
         <header>
           <AllSquares />
         </header>
-        <Buttons />
       </div>
     )
   }

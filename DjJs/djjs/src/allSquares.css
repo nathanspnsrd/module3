@@ -1,9 +1,16 @@
 .squares {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
     border: 2px solid blue;
     border-radius: 30px;
     padding: 30px;
+  }
+
+  .twoSquares {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
   }
