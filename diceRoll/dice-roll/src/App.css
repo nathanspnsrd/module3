@@ -1,0 +1,24 @@
+.diceContainer {
+  text-align: center;
+}
+
+.allDice {
+  display: flex;
+  flex-direction: column;
+}
+
+.threeDice {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.shuffle {
+  background-color: white;
+  width: 25%;
+  margin: 25px;
+  padding: 15px;
+  font-size: larger;
+  border-radius: 10px;
+}
