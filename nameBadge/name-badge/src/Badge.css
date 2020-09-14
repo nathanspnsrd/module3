@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: azure;
+}
+
+.formSection {
+    border-bottom: 2px solid gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form {
+    width: max-content;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+    background-color: blue;
+}
+
+.about {
+    width: 85%;
+    height: 80px;
+}
+
+.submitButton {
+    width: 30%;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    margin: 15px;
+    padding: 5px
+}
+
+h1 {
+    margin: 10px;
+}
+
+.submitedForms {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.completedBadge {
+    border: 1px solid gray;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    text-align: left;
+}
