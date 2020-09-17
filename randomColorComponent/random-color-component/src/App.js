@@ -14,8 +14,9 @@ class App extends React.Component {
     fetch(`http://www.colr.org/json/color/random?timestamp=${new Date().getTime()}`)
       .then(response => response.json())
       .then(data => {
+        console.log(data)
         this.setState({
-          backgroundColor: data
+          backgroundColor: `#${data.new_color}`
         })
       })
   }
@@ -23,7 +24,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {this.state.backgroundColor.map(color => <BackGroundColor {...color} />)}
+        <BackGroundColor newColor={this.state.backgroundColor} />
       </div>
     )
   }
