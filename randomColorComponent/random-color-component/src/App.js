@@ -15,7 +15,7 @@ class App extends React.Component {
       .then(response => response.json())
       .then(data => {
         this.setState({
-          backgroundColor: data
+          backgroundColor: `#${data.new_color}`
         })
       })
   }
@@ -23,7 +23,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {this.state.backgroundColor.map(color => <BackGroundColor {...color} />)}
+        <BackGroundColor newColor={this.state.backgroundColor} />
       </div>
     )
   }
