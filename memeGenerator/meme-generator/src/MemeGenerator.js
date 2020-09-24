@@ -70,7 +70,7 @@ class MemeGenerator extends React.Component {
                     <h2 className="bottom">{this.state.bottomText}</h2>
                 </div>
                 <div className="meme">
-                    {this.state.completedMemes.map(completedMeme => 
+                    {this.state.completedMemes.reverse().map(completedMeme => 
                         <CompletedMemes {...completedMeme} />         
                     )}
                 </div>
