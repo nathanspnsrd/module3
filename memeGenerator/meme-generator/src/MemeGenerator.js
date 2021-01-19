@@ -40,7 +40,7 @@ class MemeGenerator extends React.Component {
         let newCompletedMeme = {topText: this.state.topText, bottomText: this.state.bottomText, randomImg: this.state.randomImg}
    
         this.setState(prevState => ({
-            completedMemes: [...prevState.completedMemes, newCompletedMeme]
+            completedMemes: [newCompletedMeme, ...prevState.completedMemes]
         }))
     }
 
@@ -70,7 +70,7 @@ class MemeGenerator extends React.Component {
                     <h2 className="bottom">{this.state.bottomText}</h2>
                 </div>
                 <div className="meme">
-                    {this.state.completedMemes.reverse().map(completedMeme => 
+                    {this.state.completedMemes.map(completedMeme => 
                         <CompletedMemes {...completedMeme} />         
                     )}
                 </div>
